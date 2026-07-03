@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KO1KEYZ CD SIMULATOR</title>
+  <meta name="description" content="KO1KEYZのCD購入枚数・金額・応募口数をリアルタイムでシミュレーションできる非公式サイトです。">
+  <meta name="theme-color" content="#6FC8FF">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;600;700&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/variables.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/home.css">
+</head>
+<body>
+  <main class="home">
+    <div class="container">
+      <header class="hero fade-in">
+       <!---<h1 class="hero__title">KO1KEYZ<span>CD SIMULATOR</span></h1>-->
+        <img src="assets/images/logo.png" alt="KO1KEYZ CD Simulator" class="hero__logo">
+        <div class="hero__description">CDの購入枚数・金額・応募口数を<br>リアルタイムでシミュレーション</div>
+        <div class="hero__notice">保存機能はありません。<br>スクリーンショットでの保存を推奨しています。</div>
+      </header>
+
+      <section class="release">
+       <!--<h2 class="section-title">Simulation</h2>-->
+        <div class="release-list" id="releaseList"></div>
+      </section>
+
+      <footer class="footer">
+        <p>This is an unofficial website.</p>
+        <p>※当サイトは非公式サイトです。</p>
+        <small>Version 1.0.0</small>
+        <small>© 2026 KO1KEYZ CD SIMULATOR</small>
+      </footer>
+    </div>
+  </main>
+
+<script>
+async function renderReleases(){
+  const list = document.getElementById('releaseList');
+  try {
+    const master = await fetch('./assets/data/releaseMaster.json').then(r => r.json());
+    const releases = master.releases.filter(release => release.enabled);
+    list.innerHTML = releases.map(release => `
+      <a href="./${release.page}" class="release-card">
+        <div class="release-card__header"><span class="release-card__type">${release.name.toUpperCase()}</span></div>
+        <h3 class="release-card__title">${release.displayTitle || release.name}</h3>
+       <!-- <p class="release-card__date">Release</p>-->
+        <p class="release-card__release-date">
+  ${release.releaseDate ? `${release.releaseDate} リリース` : ''}
+</p>
+        <div class="release-card__button">START</div>
+      </a>
+    `).join('');
+  } catch (error) {
+    list.innerHTML = '<p class="hero__notice">リリース情報を読み込めませんでした。</p>';
+    console.error(error);
+  }
+}
+renderReleases();
+</script>
+</body>
+</html>

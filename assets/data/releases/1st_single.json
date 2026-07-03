@@ -1,0 +1,237 @@
+{
+  "id": "1st_single",
+  "title": "1st Single",
+  "displayTitle": "タイトル未定",
+  "artist": "KO1KEYZ",
+  "releaseDate": "2026.10.07",
+  "notice": "※各種特典は終了している可能性があります。各公式サイトをご確認ください。",
+  "formats": [
+    {
+      "id": "set_3",
+      "name": "3形態セット",
+      "price": 5200,
+      "cdCount": 3
+    },
+    {
+      "id": "limited_a",
+      "name": "初回限定盤A",
+      "price": 1900,
+      "cdCount": 1
+    },
+    {
+      "id": "limited_b",
+      "name": "初回限定盤B",
+      "price": 1900,
+      "cdCount": 1
+    },
+    {
+      "id": "regular",
+      "name": "通常盤",
+      "price": 1400,
+      "cdCount": 1
+    },
+    {
+      "id": "solo_jacket",
+      "name": "ソロジャケット盤",
+      "price": 1700,
+      "cdCount": 1,
+      "officialOnly": true
+    }
+  ],
+  "campaignGroups": [
+    {
+      "id": "ec1",
+      "title": "▼ 第1弾EC対象",
+      "label": "第1弾EC対象",
+      "storeIds": [
+        "tower_online",
+        "hmv_online",
+        "rakuten",
+        "neowing",
+        "universal",
+        "amazon",
+        "seven"
+      ],
+      "ec1": true,
+      "ec2": false,
+      "wBonus": false,
+      "serial": true,
+      "formatIds": [
+        "set_3",
+        "limited_a",
+        "limited_b",
+        "regular"
+      ]
+    },
+    {
+      "id": "ec2",
+      "title": "▼ 第2弾EC対象",
+      "label": "第2弾EC対象",
+      "storeIds": [],
+      "ec1": false,
+      "ec2": true,
+      "wBonus": false,
+      "serial": true,
+      "formatIds": [
+        "set_3",
+        "limited_a",
+        "limited_b",
+        "regular"
+      ]
+    },
+    {
+      "id": "w_yes",
+      "title": "▼ W特典対象",
+      "label": "W特典対象",
+      "storeIds": [
+        "official"
+      ],
+      "ec1": false,
+      "ec2": false,
+      "wBonus": true,
+      "serial": true,
+      "formatIds": [
+        "set_3",
+        "limited_a",
+        "limited_b",
+        "regular",
+        "solo_jacket"
+      ]
+    },
+    {
+      "id": "w_no",
+      "title": "▼ W特典なし",
+      "label": "W特典なし",
+      "storeIds": [
+        "official"
+      ],
+      "ec1": false,
+      "ec2": false,
+      "wBonus": false,
+      "serial": true,
+      "formatIds": [
+        "set_3",
+        "limited_a",
+        "limited_b",
+        "regular",
+        "solo_jacket"
+      ]
+    },
+    {
+      "id": "ec_none",
+      "title": "▼ ECなし",
+      "label": "ECなし",
+      "storeIds": [
+        "tower_store",
+        "tower_online",
+        "hmv_store",
+        "hmv_online",
+        "rakuten",
+        "neowing",
+        "universal",
+        "amazon",
+        "seven",
+        "tsutaya",
+        "lapone",
+        "general"
+      ],
+      "ec1": false,
+      "ec2": false,
+      "wBonus": false,
+      "serial": true,
+      "formatIds": [
+        "set_3",
+        "limited_a",
+        "limited_b",
+        "regular"
+      ]
+    }
+  ],
+  "stores": [
+    {
+      "id": "tower_store",
+      "name": "TOWER RECORDS店舗",
+      "setBonus": "ランダムトレカ"
+    },
+    {
+      "id": "tower_online",
+      "name": "TOWER RECORDS ONLINE",
+      "setBonus": "ランダムトレカ"
+    },
+    {
+      "id": "hmv_store",
+      "name": "HMV店舗",
+      "setBonus": "ランダムトレカ"
+    },
+    {
+      "id": "hmv_online",
+      "name": "HMV＆BOOKS online",
+      "setBonus": "ランダムトレカ"
+    },
+    {
+      "id": "rakuten",
+      "name": "楽天ブックス",
+      "setBonus": "ランダムフォンタブ"
+    },
+    {
+      "id": "neowing",
+      "name": "Neowing",
+      "setBonus": "ランダムL判生写真"
+    },
+    {
+      "id": "universal",
+      "name": "UNIVERSAL MUSIC STORE",
+      "setBonus": "CD収納BOX（メンバー選択可）"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon.co.jp",
+      "setBonus": "ランダムトレカ"
+    },
+    {
+      "id": "seven",
+      "name": "セブンネットショッピング",
+      "setBonus": "ランダムアクリルキーホルダー"
+    },
+    {
+      "id": "tsutaya",
+      "name": "TSUTAYA RECORDS",
+      "setBonus": "ランダムアクリルカード"
+    },
+    {
+      "id": "lapone",
+      "name": "LAPONE STORE",
+      "setBonus": "ランダムクリアトレカ"
+    },
+    {
+      "id": "general",
+      "name": "その他一般店",
+      "setBonus": "告知ポスター"
+    },
+    {
+      "id": "official",
+      "name": "KO1KEYZ OFFICIAL STORE",
+      "setBonus": "2L判集合生写真",
+      "wBonus": true
+    }
+  ],
+  "officialBonusText": {
+    "set_3": [
+      "メンバー別トレカ（初回限定盤A Ver.）",
+      "メンバー別トレカ（初回限定盤B Ver.）",
+      "メンバー別トレカ（通常盤 Ver.）"
+    ],
+    "limited_a": [
+      "メンバー別トレカ（初回限定盤A Ver.）"
+    ],
+    "limited_b": [
+      "メンバー別トレカ（初回限定盤B Ver.）"
+    ],
+    "regular": [
+      "メンバー別トレカ（通常盤 Ver.）"
+    ],
+    "solo_jacket": [
+      "メンバー別トレカフレームクリアカード"
+    ]
+  }
+}

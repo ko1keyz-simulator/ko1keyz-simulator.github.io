@@ -1,0 +1,73 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+/* container */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+/* card */
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 12px;
+}
+
+/* select */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+/* button */
+button {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--radius-sm);
+    background: var(--color-primary);
+    color: white;
+    font-weight: var(--weight-bold);
+}
+
+/* row */
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0;
+}
+
+/* delete */
+.delete {
+    color: var(--color-danger);
+    cursor: pointer;
+}
+
+/* flash */
+.flash {
+    animation: flash 0.25s ease;
+}
+
+@keyframes flash {
+    0% { background: rgba(111,200,255,0.3); }
+    100% { background: transparent; }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KO1KEYZ CD Simulator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/variables.css">
+<link rel="stylesheet" href="./assets/css/common.css">
+<link rel="stylesheet" href="./assets/css/simulator.css">
+</head>
+<body data-release-id="1st_single">
+
+<header class="site-header">
+  <!--<div class="site-title">KO1KEYZ CD SIMULATOR</div>-->
+  <img src="assets/images/logo.png" alt="KO1KEYZ CD Simulator" class="page-logo">
+  <p class="site-notice" id="releaseNotice">※各種特典は終了している可能性があります。<br>必ず各公式サイトをご確認ください。</p>
+</header>
+
+<div class="container">
+  <section class="dashboard">
+    <div class="dashboard-main">
+      <div class="dash-item">💰<span>合計</span><strong id="price">¥0</strong></div>
+      <div class="dash-item">💿<span>CD</span><strong id="cd">0</strong></div>
+       <div class="dash-item">🌟<span>シリアル</span><strong id="serial">0</strong></div>
+      <div class="dash-item">🎫<span>EC①</span><strong id="ec1">0</strong></div>
+      <div class="dash-item">🎫<span>EC②</span><strong id="ec2">0</strong></div>
+      <div class="dash-item">🔓<span>W特典</span><strong id="wBonus">0</strong></div>
+     
+    </div>
+  </section>
+
+  <section class="card bonus-dashboard">
+    <button type="button" class="accordion-title" id="bonusTotalToggle">
+      <span>▼ その他特典</span>
+      <strong id="bonusTotal">0</strong>
+    </button>
+    <div class="accordion-body hidden" id="bonusTotalBody"></div>
+  </section>
+
+  <section class="purchase-control-row">
+    <div class="card purchase-select-card">
+      <label class="section-label" for="store">購入場所</label>
+      <select id="store"></select>
+    </div>
+    <div class="purchase-action-area">
+      <button type="button" class="clear-btn confirm-btn" id="listModeButton">一覧を表示</button>
+      <button type="button" class="clear-btn clear-all" id="clearAllButton">全てクリア</button>
+    </div>
+  </section>
+
+  <section id="cards"></section>
+
+  <footer class="footer simulator-footer">
+    <p>This is an unofficial website.</p>
+    <p>※当サイトは非公式サイトです。</p>
+    <small>Version 1.0.0</small>
+    <small>© 2026 KO1KEYZ CD SIMULATOR</small>
+  </footer>
+</div>
+
+<script src="./assets/js/simulator.js"></script>
+</body>
+</html>

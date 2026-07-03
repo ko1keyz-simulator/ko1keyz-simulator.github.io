@@ -1,0 +1,13 @@
+{
+  "releases": [
+    {
+      "id": "1st_single",
+      "name": "1st Single",
+      "displayTitle": "タイトル未定",
+      "releaseDate": "2026.10.07",
+      "page": "1st_single.html",
+      "enabled": true
+    }
+  ],
+  "default": "1st_single"
+}
